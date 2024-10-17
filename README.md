@@ -56,12 +56,13 @@ module rom_memory (
     end
 endmodule
 
+OUTPUT:
+![image](https://github.com/user-attachments/assets/7342209d-7005-468d-9234-9398630163dd)
+
 
 Testbench for 4KB ROM Memory
 
-// rom_memory_tb.v
 `timescale 1ns / 1ps
-
 module rom_memory_tb;
 
     // Inputs
@@ -114,9 +115,10 @@ module rom_memory_tb;
         $monitor("Time = %0t | Write Enable = %b | Address = %h | Data In = %h | Data Out = %h", 
                  $time, write_enable, address, data_in, data_out);
     end
-
 endmodule
 
+OUTPUT:
+![4KB ROM Testbench](https://github.com/user-attachments/assets/a2c683f3-e411-4991-bd74-c24aebed43b7)
 
 Conclusion
 In this experiment, a 4KB ROM memory with read and write operations was designed and successfully simulated using Verilog HDL. The testbench verified both the write and read functionalities by simulating the memory operations and observing the output waveforms. The experiment demonstrates how to implement memory operations in Verilog, effectively modeling both the reading and writing processes for ROM.
